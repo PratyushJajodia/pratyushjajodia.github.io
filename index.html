@@ -1,0 +1,341 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <title>Pratyush Jajodia</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <base href="./" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <style>
+        .career-timeline { position: relative; max-width: 1240px; margin: 3rem auto 0 auto; padding: 1rem 0; }
+        .career-timeline:before { content: ''; position: absolute; left: 50%; top: 0; bottom: 0; width: 3px; background: rgba(71, 211, 229, 0.6); transform: translateX(-50%); }
+        .timeline-item { position: relative; width: 50%; padding: 0 0.8rem; margin-bottom: 2.1rem; }
+        .timeline-item.left { left: 0; text-align: right; }
+        .timeline-item.right { left: 50%; text-align: left; }
+        .timeline-item:after { content: ''; position: absolute; top: 0.9rem; width: 14px; height: 14px; border-radius: 50%; background: #47D3E5; border: 3px solid #ffffff; box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1); }
+        .timeline-item.left:after { right: -7px; }
+        .timeline-item.right:after { left: -7px; }
+        .timeline-card { background: rgba(255, 255, 255, 0.92); border-radius: 0.75rem; padding: 1rem 1.15rem; box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08); border: 1px solid rgba(71, 211, 229, 0.22); }
+        .timeline-card h4 { margin-bottom: 0.35rem; }
+        .timeline-card .timeline-dates { display: block; font-size: 0.82rem; letter-spacing: 0.02em; text-transform: uppercase; color: rgba(0, 0, 0, 0.5); margin-bottom: 0.65rem; font-weight: 600; }
+        .timeline-card p { margin: 0; font-size: 0.93rem; line-height: 1.42; }
+        @media screen and (max-width: 980px) {
+            .career-timeline:before { left: 1.2rem; transform: none; }
+            .timeline-item, .timeline-item.left, .timeline-item.right { width: 100%; left: 0; text-align: left; padding: 0 0 0 3rem; }
+            .timeline-item.left:after, .timeline-item.right:after { left: 0.8rem; right: auto; }
+        }
+        /* Hero: thin system-ui stack (light panel), typed role line */
+        .hero-minimal h1.hero-name {
+            font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+            font-weight: 200;
+            letter-spacing: -0.03em;
+            line-height: 1.12;
+            margin-bottom: 0;
+        }
+        .hero-minimal .hero-typed {
+            font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+            font-weight: 200;
+            font-size: 1.35rem;
+            margin: 1.35rem 0 0 0;
+            line-height: 1.5;
+        }
+        .hero-minimal .hero-typed .typed {
+            border-bottom: 2px solid currentColor;
+            padding-bottom: 2px;
+        }
+        /* Normalize gallery tiles so all rows align with no white gaps */
+        .gallery.style2.small article {
+            height: 18rem;
+            overflow: hidden;
+            background: transparent;
+        }
+        .gallery.style2.small article > img.image,
+        .gallery.style2.small article > .image,
+        .gallery.style2.small article > .image img {
+            width: 100% !important;
+            height: 100% !important;
+            object-fit: cover !important;
+            object-position: center !important;
+            display: block !important;
+            border-radius: 0 !important;
+            margin: 0 !important;
+        }
+        @media screen and (max-width: 980px) {
+            .gallery.style2.small article {
+                height: 14rem;
+            }
+        }
+        @media screen and (max-width: 736px) {
+            .gallery.style2.small article {
+                height: 11rem;
+            }
+        }
+        .course-skills-row {
+            display: flex;
+            gap: 4rem;
+            align-items: flex-start;
+        }
+        .course-skills-col {
+            flex: 1 1 0;
+            min-width: 0;
+        }
+        .course-skills-col ul {
+            margin-bottom: 0;
+        }
+        @media screen and (max-width: 980px) {
+            .course-skills-row {
+                flex-direction: column;
+                gap: 2rem;
+            }
+        }
+        #first .about-credentials.major {
+            margin-top: 0;
+            margin-bottom: 1.5rem;
+        }
+    </style>
+</head>
+<body class="is-preload">
+    <div id="wrapper" class="divided">
+        <section class="banner style1 orient-left content-align-left image-position-right fullscreen">
+            <div class="content hero-minimal">
+                <h1 class="hero-name">Hi there! I am Pratyush.</h1>
+                <p class="hero-typed">
+                    <span class="typed" data-typed-items="Software Developer,Data Enthusiast,Student Leader,Full-Stack Builder,Lifelong Learner,Problem Solver,Research-Minded Developer,Community Builder,Automation-Focused Builder,Curious Technologist,Pragmatic Engineer,Collaborative Leader,Detail-Oriented Builder,Hands-On Engineer,Systems-Oriented Thinker,Reliability-Focused Engineer,Ops-Savvy Developer,UX-Conscious Builder,Data Storyteller,API &amp; ETL Builder,IT-Minded Technologist,Agile-Friendly Contributor,Security-Aware Developer,Cloud-Curious Engineer"></span>
+                </p>
+            </div>
+            <div class="image">
+                <img src="pictures/Profile.webp" alt="" />
+            </div>
+        </section>
+
+        <section class="spotlight style1 orient-right content-align-left image-position-center" id="first">
+            <div class="content">
+                <h2>About Me</h2>
+        
+                <p>Based in <b>Toronto, Canada</b>, I am a recent <b>York University</b> graduate with a <b>B.Sc. (Honours)</b> degree in <b>Computer Science</b>, now focused on building dependable software across <b>research</b>, <b>engineering</b>, and <b>IT operations</b>.</p>
+                <p>Right now I am working on <b>research</b> (Python ETL and automation for language-preservation linguistics workflows), <b>engineering</b> (full-stack apps for student clubs with React, Next.js, and TypeScript), and <b>IT operations</b> (university deployments, endpoints, and technical support).</p>
+                <p>I like building systems that are <b>reliable in production</b> and genuinely useful to the people who rely on them.</p>
+            </div>
+            <div class="image">
+                <img src="pictures/More.jpeg" alt="" />
+            </div>
+        </section>
+
+        <section class="spotlight style1 orient-left content-align-left image-position-center">
+            <div class="content">
+                <h2>Education</h2>
+                <p><b>York University, Lassonde School of Engineering</b> — <b>Specialized Honours B.Sc. in Computer Science</b> (September 2022 – June 2026).</p>
+                <p><b>Path:</b> Started in the <b>Faculty of Liberal Arts &amp; Professional Studies</b> (Honours Information Technology), then transferred into Lassonde for Computer Science — a strong foundation in IT, organizations, and programming before specializing in CS.</p>
+                <p><b>High school:</b> <b>Harold M. Brathwaite Secondary School</b> (October 2021 – June 2022) and <b>Applewood Heights Secondary School</b> (September 2020 – September 2021).</p>
+                <p><b>Honours &amp; awards:</b> Dean's Honour Roll (York University), plus Academic Achievement Award and International Award of Excellence (high school).</p>
+            </div>
+            <div class="image">
+                <img src="pictures/Exploring%20new%20places.jpeg" alt="" />
+            </div>
+        </section>
+
+        <section class="wrapper style1 align-center">
+            <div class="inner">
+                <h2>My experience</h2>
+                <p>Where I have built, supported, and led, from university IT and linguistics research to full-stack development for student organizations, industry software, municipal customer service, and exam invigilation.</p>
+                <div class="career-timeline">
+                    <div class="timeline-item left">
+                        <div class="timeline-card">
+                            <h4>Research Assistant</h4>
+                            <span class="timeline-dates">March 2026 to Present · Department of Linguistics, York University</span>
+                            <p>I design Python tooling that ingests, validates, and reshapes ELAN linguistic annotations so tiers stay consistent and exports arrive as clean JSON and TSV. The pipeline removes repetitive boundary checks and gives researchers a dependable path from raw recordings to analysis-ready datasets.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item right">
+                        <div class="timeline-card">
+                            <h4>Information Technology Assistant</h4>
+                            <span class="timeline-dates">August 2025 to Present · York University eServices</span>
+                            <p>I provide L1/L2 support through our ITSM queue, troubleshooting Microsoft 365, VPN and campus connectivity, and the SaaS stack faculty rely on every day. I also help drive Windows 11 deployments with SCCM, shepherd onboarding cycles, and stay close to the asset lifecycle so classrooms and offices stay ahead of hardware drift.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item left">
+                        <div class="timeline-card">
+                            <h4>Software Developer · Data Science Club</h4>
+                            <span class="timeline-dates">August 2025 to Present · York University</span>
+                            <p>I lead architecture for a progressive web experience in Next.js, TypeScript, Tailwind, and Firebase, pairing SSR with live data sync and role-aware views for members, organizers, and admins. Recent focus areas include event operations with RSVPs and QR check-ins plus reusable motion-driven UI building blocks that keep club programming polished without reinventing the wheel each term.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item right">
+                        <div class="timeline-card">
+                            <h4>Software Developer</h4>
+                            <span class="timeline-dates">January to September 2025 · Seed NanoTech International Inc.</span>
+                            <p>I built Flask APIs that ingest real-time biosensor streams, combining NumPy and Pandas transforms with SQL and document-style storage for time-series analytics. Alongside the services work, I automated cleaning and reporting with Python scripting and Power Automate so validated results flow straight into SharePoint instead of living in one-off spreadsheets.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item left">
+                        <div class="timeline-card">
+                            <h4>Customer Service Representative</h4>
+                            <span class="timeline-dates">August 2023 to Present · Town of Caledon</span>
+                            <p>I help residents navigate municipal services with patience and clarity, whether that is explaining a process at the counter, resolving issues over the phone, or coordinating with internal teams when a case needs a specialist. The role sharpened my communication under pressure and my ability to keep complex policies sounding human.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item right">
+                        <div class="timeline-card">
+                            <h4>Exam Invigilator</h4>
+                            <span class="timeline-dates">September 2023 to April 2024 · York University</span>
+                            <p>I supported large-scale exam delivery across campus venues: verifying seating plans, upholding academic integrity expectations, coordinating accessibility accommodations, and keeping students informed when schedules shifted. It taught me calm execution in high-stakes environments where small details matter.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item left">
+                        <div class="timeline-card">
+                            <h4>Team Member</h4>
+                            <span class="timeline-dates">Earlier role · Canadian Tire</span>
+                            <p>Seasonal retail work on a busy sales floor, balancing friendly service, stocking and merchandising support, and tight teamwork during peak traffic. It was my first sustained taste of owning outcomes in front of customers, and it still informs how I communicate in technical roles today.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+ 
+        <section class="spotlight style1 orient-right content-align-left image-position-center">
+            <div class="content">
+                <h2>Information Technology Assistant</h2>
+                <p>With York <b>eServices</b>, I support faculty and staff across the university — including work with the <b>Faculty of Liberal Arts &amp; Professional Studies (LAPS)</b>. Day to day, that means L1/L2 troubleshooting through HaloITSM, Microsoft 365 and SaaS applications, VPN and network access, Windows 11 deployments via SCCM, and IMAC-style onboarding cycles so people can teach and administer without friction.</p>
+                <p><i>Photo note: Christmas Party, 2025.</i></p>
+            </div>
+            <div class="image">
+                <img src="pictures/IT.webp" alt="" />
+            </div>
+        </section>
+
+        <section class="spotlight style1 orient-left content-align-left image-position-center">
+            <div class="content">
+                <h2>Volunteering</h2>
+                <p>I serve as <b>Director of Information Technology</b> for the <b>International Unity Club</b> at York University — a student-run group that supports international students with resources, events, and community.</p>
+                <p>I built the club site on <b>Next.js</b> with SSR, Tailwind, accessible Radix primitives, and motion-forward storytelling, backed by lightweight content workflows so committees can ship updates safely. I also mentor a five-person IT pod through sprint-style delivery and stakeholder reviews, keeping the platform dependable during peak recruitment and orientation seasons.
+                <br> <br>
+                <b>Live site:</b> <a href="https://iucyorku.vercel.app/">iucyorku.vercel.app</a></p>
+                <p><i>Photo note: this image is from a Career Networking Event hosted by the club.</i></p>
+            </div>
+            <div class="image">
+                <img src="pictures/Volunteering.jpeg" alt="" />
+            </div>
+        </section>
+
+        <section class="spotlight style1 orient-right content-align-left image-position-center">
+            <div class="content">
+                <h2>Free Time Adventures</h2>
+                <p>The rapidly evolving tech landscape, new languages, AI, and frameworks drive me to stay hands-on with side projects that keep my skills sharp and current because, let's be real, if I don't, I will be the guy dropping <b>"Quantum ML Distributed Computing"</b> in conversations and hoping no one asks me to explain it.</p>
+                <p>I also explore a wide range of subjects through books, from philosophy, economics, and geography to government policies and their impact on businesses. It helps me stay balanced and broaden my perspective beyond just CS.</p>
+                <p>Outside class and work I recharge with <b>sports</b>, following <b>cars</b>, and unwinding with <b>Marvel</b> and <b>gaming</b> — especially <b>Call of Duty</b>.</p>
+                <p>I also love <b>nature</b>: trails, open spaces, and anything that gets me away from a screen for a while.</p>
+                <p><i>Photo note: the best dog I ever had. Yes, I am a dog lover too.</i></p>
+            </div>
+            <div class="image">
+                <img src="pictures/Dogs.jpeg" alt="" />
+            </div>
+        </section>
+
+        <section class="spotlight style1 orient-left content-align-left image-position-center">
+            <div class="content">
+                <h2>Travelling</h2>
+                <p>I'm a <b>big time hiker</b> and I don't shy away from travelling and exploring new places whenever I get the opportunity. <b>Below are some images from my personal gallery.</b></p>
+            </div>
+            <div class="image">
+                <img src="pictures/Exploring%20new%20places.jpeg" alt="" />
+            </div>
+        </section>
+
+        <section class="wrapper style1 align-center">
+            <div class="inner">
+                <h2>Personal Gallery</h2>
+            </div>
+            <div class="gallery style2 small lightbox onscroll-fade-in">
+                <article><img src="pictures/landscapes/gallery-1.jpg" alt="" class="image" /></article>
+                <article><img src="pictures/landscapes/gallery-2.jpg" alt="" class="image" /></article>
+                <article><img src="pictures/landscapes/gallery-3.JPG" alt="" class="image" /></article>
+                <article><img src="pictures/landscapes/gallery-4.jpg" alt="" class="image" /></article>
+                <article><img src="pictures/landscapes/gallery-5.jpg" alt="" class="image" /></article>
+                <article><img src="pictures/landscapes/gallery-6.jpg" alt="" class="image" /></article>
+                <article><img src="pictures/landscapes/gallery-7.jpg" alt="" class="image" /></article>
+                <article><img src="pictures/landscapes/gallery-8.jpg" alt="" class="image" /></article>
+                <article><img src="pictures/landscapes/Gallery%209.jpg" alt="" class="image" /></article>
+            </div>
+        </section>
+
+
+        <section class="spotlight style1 orient-left content-align-left">
+            <div class="content">
+                <div class="course-skills-row">
+                    <div class="course-skills-col">
+                        <h2>Relevant Courses</h2>
+                        <ul>
+                            <li>Big Data Systems</li>
+                            <li>Computer Security</li>
+                            <li>Data Structures and Algorithms</li>
+                            <li>Database Systems</li>
+                            <li>Operating Systems</li>
+                            <li>Computer Networks</li>
+                            <li>Software Design</li>
+                            <li>Machine Learning</li>
+                            <li>Data Mining</li>
+                            <li>Computer Vision</li>
+                        </ul>
+                    </div>
+                    <div class="course-skills-col">
+                        <h2>Technical Skills</h2>
+                        <ul>
+                            <li><b>Languages:</b> Java, Python, C, C#, JavaScript/TypeScript, SQL, Bash, PowerShell, HTML, CSS</li>
+                            <li><b>Frameworks:</b> Spring Boot, React, Next.js, Node.js, Express, Flask, ASP.NET Core, Entity Framework Core, Tailwind CSS</li>
+                            <li><b>Data &amp; APIs:</b> ETL/ELT pipelines, REST/SOAP APIs, Power BI, Power Automate, Power Apps, UML</li>
+                            <li><b>Databases &amp; Tools:</b> MySQL, PostgreSQL, SQL Server, MongoDB, Supabase, Git, GitHub, Postman, Swagger</li>
+                            <li><b>Cloud &amp; DevOps:</b> AWS, Docker, Ansible, Kubernetes, Jenkins, CI/CD, Google Cloud, Render, Vercel, Netlify</li>
+                            <li><b>Certifications:</b> Google IT Support Professional Certificate (2023), Google AI Essentials (2023)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="spotlight style1 orient-left content-align-left image-position-center">
+            <div class="content">
+                <h2>Contact</h2>
+                <p><b>Email:</b> pratyushjajodia23@gmail.com</p>
+                <p><b>LinkedIn:</b> <a href="https://www.linkedin.com/in/pratyushjajodia">linkedin.com/in/pratyushjajodia</a></p>
+                <p><b>GitHub:</b> <a href="https://github.com/PratyushJajodia">github.com/PratyushJajodia</a></p>
+                <p><b>Medium:</b> <a href="https://medium.com/@pratyushjajodia23">medium.com/@pratyushjajodia23</a></p>
+                <ul class="icons">
+                    <li><a href="https://www.linkedin.com/in/pratyushjajodia" class="icon brands style2 fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+                    <li><a href="https://github.com/PratyushJajodia" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
+                    <li><a href="https://medium.com/@pratyushjajodia23" class="icon brands style2 fa-medium-m"><span class="label">Medium</span></a></li>
+                </ul>
+            </div>
+        </section>
+
+    </div>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/typed.min.js"></script>
+    <script>
+        (function () {
+            var el = document.querySelector(".hero-typed .typed");
+            var TypedCtor = window.Typed;
+            if (!el || typeof TypedCtor !== "function") return;
+            var raw = el.getAttribute("data-typed-items") || "";
+            var strings = raw.split(",").map(function (s) { return s.trim(); }).filter(Boolean);
+            new TypedCtor(el, {
+                strings: strings,
+                loop: true,
+                startDelay: 400,
+                typeSpeed: 55,
+                backSpeed: 40,
+                backDelay: 2200,
+                smartBackspace: true
+            });
+        })();
+    </script>
+</body>
+</html>
